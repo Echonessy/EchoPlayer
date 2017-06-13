@@ -7,7 +7,8 @@
 //'ClassPrefix ':自定义播放器的标识类名 例如 .EchoPlayer-Play 自定义播放器的标识类名注意同时启用多个播放器的时候类名不要重复
 //ClassPrefixPosition:'fixed'//自定义播放器的布局方式fixed 特殊 默认auto
 //Defultcss:true :是否启用默认播放器样式
-//注意：Chrome浏览器针对audio 设置currentTime始终为0，是因为服务器导致的，建议测试采用线上音频链接或者配置nginx、Apache等服务代理
+//注意：Chrome浏览器针对audio 设置currentTime始终为0，
+是因为服务器导致的，建议测试采用线上音频链接或者配置nginx、Apache等服务代理
 
 
 
