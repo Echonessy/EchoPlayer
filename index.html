@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EchoMusic</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/EchoMusic.css">
+    <script src="js/EchoPlayer.js"></script>
+</head>
+<body>
+<div class="Content" id="Content">
+    <audio src="content/qi_tian.mp3" controls id="audio"></audio>
+    <audio src="content/qi_tian.mp3" controls id="audio1"></audio>
+</div>
+</body>
+<script>
+    var player1=new EchoPlayer();
+    player1.config({
+        ele: '#audio', //绑定的DOM
+        ClassPrefix: 'EchoPlayer', //自定义播放器的标识类名
+        Defultcss:true,//是否启用默认播放器样式
+        ClassPrefixPosition:'fixed'//自定义播放器的布局方式fixed 特殊 默认auto
+    })
+    var player2=new EchoPlayer();
+    player2.config({
+        ele: '#audio1', //绑定的DOM
+        Defultcss:false,//是否启用默认播放器样式
+        ClassPrefix: 'Test', //自定义播放器的标识类名注意同时启用多个播放器的时候类名不要重复
+    })
+</script>
+</html>
