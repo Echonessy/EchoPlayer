@@ -11,6 +11,7 @@
 <div class="Content" id="Content">
     <audio src="content/qi_tian.mp3" controls id="audio"></audio>
     <audio src="content/qi_tian.mp3" controls id="audio1"></audio>
+    <audio src="content/qi_tian.mp3" controls id="audio2"></audio>
 </div>
 </body>
 <script>
@@ -26,6 +27,12 @@
         ele: '#audio1', //绑定的DOM
         Defultcss:false,//是否启用默认播放器样式
         ClassPrefix: 'Test', //自定义播放器的标识类名注意同时启用多个播放器的时候类名不要重复
+    })
+    var player3=new EchoPlayer();
+    player3.config({
+        ele: '#audio2', //绑定的DOM
+        Defultcss:false,//是否启用默认播放器样式
+        ClassPrefix: 'Echo3', //自定义播放器的标识类名注意同时启用多个播放器的时候类名不要重复
     })
 </script>
 </html>
