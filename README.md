@@ -10,7 +10,7 @@
 //注意：Chrome浏览器针对audio 设置currentTime始终为0，
 是因为服务器导致的，建议测试采用线上音频链接或者配置nginx、Apache等服务代理
 
-
+注意：本插件可以同时渲染多个audio标签，并且只要类名没有冲突，各播放器之间毫无冲突，目前只写了点击事件，后续会更新相应的其他事件方法。
 
 用法
 可以使用默认的播放器样式，也可以自己根据结构编写
@@ -29,6 +29,7 @@
 .Test-Volume-LoadBar{float: left;width: 50%;height: 5px;background: #656914;border-radius: 3px;}
 
 /*****************************HTml****************************/
+标签渲染目前仅支持audio标签
 <audio src="content/qi_tian.mp3" controls id="audio"></audio>
 
 /*****************************script****************************/
