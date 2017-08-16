@@ -1,4 +1,4 @@
-# EchoMusic
+# EchoPlayer
 > this is demo
 ## Creat By Echonessy  2017.06.13
 ``` bash
