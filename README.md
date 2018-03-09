@@ -14,7 +14,10 @@
 
 用法
 可以使用默认的播放器样式，也可以自己根据结构编写
-/*****************************css****************************/
+
+
+``` bash
+css:
 .Test{ width: 800px;height:60px;border-radius: 10px; box-sizing: border-box;padding: 0 30px; background: rgba(25,20,105,0.8);overflow: hidden;margin:80px auto;}
 .Test-Play{float: left; width: 30px;height: 30px;background: url("../img/playico.png")0 0 no-repeat;cursor: pointer;margin-top: 15px;}
 .Test-Pause{float: left;width: 30px;height: 30px;background: url("../img/pauseico.png")0 0 no-repeat;cursor: pointer;margin-top: 15px;}
@@ -28,11 +31,11 @@
 .Test-Volume-BarBox{float: left;width: 145px;height: 5px;background: white;margin:28px 0 0 10px;cursor: pointer;border-radius: 3px;overflow: hidden; }
 .Test-Volume-LoadBar{float: left;width: 50%;height: 5px;background: #656914;border-radius: 3px;}
 
-/*****************************HTml****************************/
-标签渲染目前仅支持audio标签
+
+Html:
 <audio src="content/qi_tian.mp3" controls id="audio"></audio>
 
-/*****************************script****************************/
+JS:
 var player1=new EchoPlayer();
     player1.config({
         ele: '#audio', //绑定的DOM
@@ -40,5 +43,8 @@ var player1=new EchoPlayer();
         Defultcss:true,//是否启用默认播放器样式
         ClassPrefixPosition:'fixed'//自定义播放器的布局方式fixed 特殊 默认auto 可以不填
     })
+```
+
+
 ## 效果图
 ![image](https://github.com/Echonessy/EchoPlayer/blob/master/read/1.png)
