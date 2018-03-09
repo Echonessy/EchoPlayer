@@ -40,3 +40,5 @@ var player1=new EchoPlayer();
         Defultcss:true,//是否启用默认播放器样式
         ClassPrefixPosition:'fixed'//自定义播放器的布局方式fixed 特殊 默认auto 可以不填
     })
+## 效果图
+![image](https://github.com/Echonessy/EchoPlayer/blob/master/read/1.png)
