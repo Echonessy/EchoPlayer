@@ -1,23 +1,19 @@
 # EchoPlayer
 > this is demo
 ## Creat By Echonessy  2017.06.13
-``` bash
-        congfig参数说明
-//'ele ':绑定的DOM  例如 .app  #app
-//'ClassPrefix ':自定义播放器的标识类名 例如 .EchoPlayer-Play 自定义播放器的标识类名注意同时启用多个播放器的时候类名不要重复
-//ClassPrefixPosition:'fixed'//自定义播放器的布局方式fixed 特殊 默认auto
-//Defultcss:true :是否启用默认播放器样式
-//注意：Chrome浏览器针对audio 设置currentTime始终为0，
+
+## congfig参数说明
+
+>'ele ':绑定的DOM  例如 .app  #app
+>'ClassPrefix ':自定义播放器的标识类名 例如 .EchoPlayer-Play 自定义播放器的标识类名注意同时启用多个播放器的时候类名不要重复
+>ClassPrefixPosition:'fixed'//自定义播放器的布局方式fixed 特殊 默认auto
+>Defultcss:true :是否启用默认播放器样式
+>注意：Chrome浏览器针对audio 设置currentTime始终为0，
 是因为服务器导致的，建议测试采用线上音频链接或者配置nginx、Apache等服务代理
 注意：本插件可以同时渲染多个audio标签，并且只要类名没有冲突，各播放器之间毫无冲突，目前只写了点击事件，后续会更新相应的其他事件方法。
 
-用法
-可以使用默认的播放器样式，也可以自己根据结构编写
-```
 
 ``` bash
-
-
 Html:
 <audio src="content/qi_tian.mp3" controls id="audio"></audio>
 
